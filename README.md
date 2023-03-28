@@ -2,8 +2,8 @@
 
 ### home page wireframe
 
-[! home](img/home.png)
+![ home](img/home.png)
 
 ### about page wireframe
 
-[! about](img/home.png)
+![ about](img/about.png)
