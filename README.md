@@ -7,3 +7,4 @@
 ### about page wireframe
 
 ![ about](img/about.png)
+...
