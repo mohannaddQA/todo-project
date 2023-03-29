@@ -6,5 +6,5 @@
 
 ### about page wireframe
 
-![ about](img/about.png)
+![ about](img/nabout.png)
 ...
