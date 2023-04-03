@@ -59,7 +59,7 @@ function check() {
     var message = `hi ${title}${Name}, welcome to our service \n we hope you like it`;
     alert(message);
   } else {
-    var message = `hi ${Name}, welcove to our service \n we hope you like it`;
+    var message = `hi ${Name}, welcome to our service \n we hope you like it`;
     alert(message);
   }
 }
