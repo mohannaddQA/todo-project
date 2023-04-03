@@ -9,7 +9,7 @@ gender = gender.toLowerCase();
 function Gender() {
   if (gender == "male") {
     title = "Mr.";
-  } else if (gender == "feamle") {
+  } else if (gender == "female") {
     title = "Ms.";
   } else {
     // alert("please enter gender correctly");
