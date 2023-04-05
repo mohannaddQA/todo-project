@@ -47,13 +47,63 @@ if (age <= 0) {
 } else {
   age = age;
 }
-console.log(title, "from line 48");
+// three additional questions
+//this time i used loops
+
+let marriageState = prompt("are you married? \nplease answer with yes or no");
+marriageState = marriageState.toLowerCase();
+if ((marriageState == "yes") | (marriageState == "no")) {
+  marriageState = marriageState;
+} else {
+  while ((marriageState != "yes") & (marriageState != "no")) {
+    alert("invalid, please answer with yes or no");
+    marriageState = prompt("are you married? \nplease answer with yes or no");
+    marriageState = marriageState.toLowerCase();
+  }
+}
+
+let workState = prompt("do you work full time? \nplease answer with yes or no");
+workState = workState.toLowerCase();
+if ((workState == "yes") | (workState == "no")) {
+  workState = workState;
+} else {
+  while ((workState != "yes") & (workState != "no")) {
+    alert("invalid, please answer with yes or no");
+    workState = prompt("do you work full time? \nplease answer with yes or no");
+    workState = workState.toLowerCase();
+  }
+}
+
+let childState = prompt(
+  "do you have any children? \nplease answer with yes or no"
+);
+childState = childState.toLowerCase();
+if ((childState == "yes") | (childState == "no")) {
+  childState = childState;
+} else {
+  while ((childState != "yes") & (childState != "no")) {
+    alert("invalid, please answer with yes or no");
+    childState = prompt(
+      "do you have any children? \nplease answer with yes or no"
+    );
+    childState = childState.toLowerCase();
+  }
+}
+
+let answers = [marriageState, workState, childState];
+console.log(
+  "are you married?\ndo you work full time?\ndo you have any children?"
+);
+for (i = 0; i < answers.length; i++) {
+  console.log(answers[i]);
+}
+
 // now with the welcome message
 function check() {
-  var skip_welcome = confirm(
+  var skipWelcome = confirm(
     "do you want to skip the welcome message?\n skip by clicking {ok} "
   );
-  if (skip_welcome == true) {
+  if (skipWelcome == true) {
     return;
   } else if ((gender == "male") | (gender == "female")) {
     var message = `hi ${title}${Name}, welcome to our service \n we hope you like it`;
